@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <title>Hello Fitness</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+    <div class="body">
+
+        <div class="navbar">
+            <div class="logo">
+                <p>HF</p>
+            </div>
+            
+            <div class="links">
+
+                <div class="live" onclick="url('#')">
+                    <i class="fas fa-video"></i>
+                    <label>LIVE</label>
+                </div>
+
+                <div class="menbership" onclick="url('#')">
+                <i class="fas fa-id-card"></i>
+                    <label>MEMBERSHIP</label>
+                </div>
+
+                <div class="running" onclick="url('#')">
+                    <i class="fa fa-running"></i>
+                    <label>PLANS</label>
+                </div>
+
+                <div class="live" onclick="url('#')">
+                    <i class="fas fa-th-large"></i>
+                    <label>MORE</label>
+                </div>
+                
+            </div>
+
+            <div class="login">
+                <i class="fas fa-user"></i>&nbsp;
+                <label>LOG IN</label>
+            </div>
+        </div>
+            <h1>Runner's Workout</h1>
+            <div class="container" id="container">   
+            <div class="img" id="img1">
+                <label>STRENGTH</label><img src="img/img1.jpg" alt="STRENGTH" class="img1"></img><i class="fas fa-chevron-circle-right"></i>
+           
+            </div>
+            <div class="img" id="img2">
+                <label>MOBILITY</label><img src="img/img2.jpg" alt="MOBILITY" class="img2"></img><i class="fas fa-chevron-circle-right"></i>
+            
+            </div>
+            <div class="img" id="img3">
+                <label>DRILLS</label><img src="img/img3.jpg" alt="DRILLS" class="img3"></img><i class="fas fa-chevron-circle-right"></i>
+            </div> 
+            </div>
+
+
+
+
+
+    </div>
+
+    <script>
+    $(".img3").hover(function() {
+      $(this).closest(".container").toggleClass("hover")
+    });
+
+    </script>
+</body>    
+</html>
